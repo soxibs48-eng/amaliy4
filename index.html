@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DWEL® — Architecture & Spatial Design</title>
+  <meta name="description" content="DWEL® is a contemporary architectural and interior design studio crafting timeless residential spaces in harmony with nature.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+  
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" id="brand-logo">DWEL®</a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#projects" class="nav-link active" id="nav-projects">PROJECTS</a>
+        <button type="button" class="nav-link nav-btn" id="open-info-btn">INFO</button>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="site-container">
+        <div class="hero-media-wrapper" id="hero-media-wrapper">
+          <img src="images/hero.png" alt="DWEL Studio Architectural Showcase" class="hero-cover-img" id="hero-cover-img" loading="eager">
+          
+          <!-- Play Trigger Button -->
+          <button class="play-button" id="play-video-btn" aria-label="Play DWEL Architecture Film">
+            <span class="play-icon-box">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="play-svg">
+                <path d="M8 5.14v13.72a1 1 0 0 0 1.54.84l10.78-6.86a1 1 0 0 0 0-1.68L9.54 4.3A1 1 0 0 0 8 5.14z"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="site-container">
+        
+        <div class="section-header">
+          <h1 class="section-title">PROJECTS</h1>
+          <div class="projects-filter-bar">
+            <button class="filter-btn active" data-filter="all">ALL (10)</button>
+            <button class="filter-btn" data-filter="residential">RESIDENTIAL</button>
+            <button class="filter-btn" data-filter="retreat">RETREAT</button>
+            <button class="filter-btn" data-filter="waterfront">WATERFRONT</button>
+          </div>
+        </div>
+
+        <!-- 2-Column Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Item 1: Village Pt -->
+          <article class="project-card" data-category="retreat" data-id="village-pt">
+            <div class="project-thumbnail">
+              <img src="images/village_pt.png" alt="Village Pt Architecture by DWEL" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="view-project-label">EXPLORE PROJECT →</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <h2 class="project-title">Village Pt</h2>
+              <span class="project-location">Aspen, Colorado • 2024</span>
+            </div>
+          </article>
+
+          <!-- Item 2: Franklin -->
+          <article class="project-card" data-category="waterfront" data-id="franklin">
+            <div class="project-thumbnail">
+              <img src="images/franklin.png" alt="Franklin Waterfront Villa by DWEL" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="view-project-label">EXPLORE PROJECT →</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <h2 class="project-title">Franklin</h2>
+              <span class="project-location">Miami, Florida • 2024</span>
+            </div>
+          </article>
+
+          <!-- Item 3: Henderson -->
+          <article class="project-card" data-category="residential" data-id="henderson">
+            <div class="project-thumbnail">
+              <img src="images/henderson.png" alt="Henderson Modern Estate by DWEL" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="view-project-label">EXPLORE PROJECT →</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <h2 class="project-title">Henderson</h2>
+              <span class="project-location">Austin, Texas • 2023</span>
+            </div>
+          </article>
+
+          <!-- Item 4: Hazelwood -->
+          <article class="project-card" data-category="residential" data-id="hazelwood">
+            <div class="project-thumbnail">
+              <img src="images/hazelwood.png" alt="Hazelwood Contemporary Residence by DWEL" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="view-project-label">EXPLORE PROJECT →</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <h2 class="project-title">Hazelwood</h2>
+              <span class="project-location">Melbourne, Australia • 2023</span>
+            </div>
+          </article>
+
+          <!-- Item 5: Martin St -->
+          <article class="project-card" data-category="retreat" data-id="martin-st">
+            <div class="project-thumbnail">
+              <img src="images/martin_st.png" alt="Martin St Desert Pavilion by DWEL" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="view-project-label">EXPLORE PROJECT →</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <h2 class="project-title">Martin St</h2>
+              <span class="project-location">Palm Springs, California • 2023</span>
+            </div>
+          </article>
+
+          <!-- Item 6: Concord -->
+          <article class="project-card" data-category="waterfront" data-id="concord">
+            <div class="project-thumbnail">
+              <img src="images/concord.png" alt="Concord Lakeside Villa by DWEL" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="view-project-label">EXPLORE PROJECT →</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <h2 class="project-title">Concord</h2>
+              <span class="project-location">Lake Como, Italy • 2022</span>
+            </div>
+          </article>
+
+          <!-- Item 7: Houston St -->
+          <article class="project-card" data-category="residential" data-id="houston-st">
+            <div class="project-thumbnail">
+              <img src="images/houston_st.png" alt="Houston St Modernist Home by DWEL" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="view-project-label">EXPLORE PROJECT →</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <h2 class="project-title">Houston St</h2>
+              <span class="project-location">Santa Barbara, California • 2022</span>
+            </div>
+          </article>
+
+          <!-- Item 8: Hillsboro -->
+          <article class="project-card" data-category="retreat" data-id="hillsboro">
+            <div class="project-thumbnail">
+              <img src="images/hillsboro.png" alt="Hillsboro Hilltop Sanctuary by DWEL" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="view-project-label">EXPLORE PROJECT →</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <h2 class="project-title">Hillsboro</h2>
+              <span class="project-location">Portland, Oregon • 2022</span>
+            </div>
+          </article>
+
+          <!-- Item 9: Willow Ave -->
+          <article class="project-card" data-category="residential" data-id="willow-ave">
+            <div class="project-thumbnail">
+              <img src="images/willow_ave.png" alt="Willow Ave Minimalist Architecture by DWEL" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="view-project-label">EXPLORE PROJECT →</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <h2 class="project-title">Willow Ave</h2>
+              <span class="project-location">Seattle, Washington • 2021</span>
+            </div>
+          </article>
+
+          <!-- Item 10: Brentwood -->
+          <article class="project-card" data-category="retreat" data-id="brentwood">
+            <div class="project-thumbnail">
+              <img src="images/brentwood.png" alt="Brentwood Timber Chalet by DWEL" loading="lazy">
+              <div class="project-hover-overlay">
+                <span class="view-project-label">EXPLORE PROJECT →</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <h2 class="project-title">Brentwood</h2>
+              <span class="project-location">British Columbia, Canada • 2021</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer Matching Figma Spec -->
+  <footer class="site-footer" id="footer">
+    <div class="site-container footer-container">
+      
+      <!-- Footer Left Meta -->
+      <div class="footer-left">
+        <p class="copyright">© DWEL</p>
+        <p class="powered-by">Powered by <a href="https://webflow.com" target="_blank" rel="noopener noreferrer">Webflow</a> .</p>
+      </div>
+
+      <!-- Footer Columns Navigation -->
+      <div class="footer-links-group">
+        <!-- Col 1 -->
+        <div class="footer-col">
+          <ul class="footer-nav-list">
+            <li><a href="#password" class="footer-link" id="link-password">Password</a></li>
+            <li><a href="#404" class="footer-link" id="link-404">404</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="footer-col">
+          <ul class="footer-nav-list">
+            <li><a href="#licenses" class="footer-link" id="link-licenses">Licenses</a></li>
+            <li><a href="#style-guide" class="footer-link" id="link-styleguide">Style Guide</a></li>
+            <li><a href="#changelog" class="footer-link" id="link-changelog">Changelog</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="footer-col">
+          <ul class="footer-nav-list">
+            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-link" id="link-twitter">Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-link" id="link-instagram">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Project Detail Lightbox Modal -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Project Modal">&times;</button>
+      <div class="modal-content-scroll">
+        <div class="modal-img-wrapper">
+          <img src="" alt="" id="modal-project-img">
+        </div>
+        <div class="modal-body">
+          <div class="modal-header-meta">
+            <span class="modal-badge" id="modal-badge">RETREAT</span>
+            <span class="modal-year" id="modal-year">2024</span>
+          </div>
+          <h2 class="modal-title" id="modal-title">Village Pt</h2>
+          <p class="modal-location" id="modal-location">Aspen, Colorado</p>
+          <div class="modal-divider"></div>
+          <p class="modal-description" id="modal-desc">
+            Nestled amid tranquil pine forests, Village Pt exemplifies DWEL's core philosophy of quiet luxury and spatial harmony. The cantilevered structure frames panoramic valley vistas while sustainable cedar timber and obsidian zinc cladding age gracefully alongside the surrounding ecosystem.
+          </p>
+          <div class="modal-spec-grid">
+            <div class="spec-item">
+              <span class="spec-label">Area</span>
+              <strong class="spec-value" id="modal-area">480 m²</strong>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Lead Architect</span>
+              <strong class="spec-value" id="modal-architect">Elena Rostova</strong>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Materials</span>
+              <strong class="spec-value" id="modal-materials">Zinc, Timber, Glass</strong>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Status</span>
+              <strong class="spec-value" id="modal-status">Completed</strong>
+            </div>
+          </div>
+          <div class="modal-actions">
+            <button class="primary-btn" id="inquire-btn">INQUIRE ABOUT THIS PROJECT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Player Modal -->
+  <div class="video-modal-overlay" id="video-modal" aria-hidden="true">
+    <div class="video-modal-card">
+      <button class="video-close-btn" id="video-close-btn" aria-label="Close Video">&times;</button>
+      <div class="video-container">
+        <!-- Native responsive video with fallbacks -->
+        <video id="architecture-video" controls playsinline poster="images/hero.png">
+          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <div class="video-caption-bar">
+        <h4>DWEL® Spatial Vision</h4>
+        <p>A meditative study of timber, light, and landscape architecture.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Info / About Slide-Over Drawer -->
+  <aside class="info-drawer" id="info-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="drawer-brand">DWEL® STUDIO</span>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close Info Panel">&times;</button>
+    </div>
+    <div class="drawer-content">
+      <section class="drawer-section">
+        <h3 class="drawer-title">ABOUT DWEL</h3>
+        <p class="drawer-text">
+          DWEL® is an international architecture and spatial design practice founded in 2018. We operate at the intersection of minimalist aesthetics, human comfort, and environmental mindfulness.
+        </p>
+        <p class="drawer-text">
+          Every commission is approached as a bespoke dialogue between the client's aspirations and the raw genius loci of the site.
+        </p>
+      </section>
+
+      <section class="drawer-section">
+        <h3 class="drawer-title">DESIGN VALUES</h3>
+        <ul class="values-list">
+          <li><strong>Clarity:</strong> Distilling complexity into pure, expressive architectural forms.</li>
+          <li><strong>Nature Integration:</strong> Blurring boundaries between interior sanctuaries and natural landscapes.</li>
+          <li><strong>Permanence:</strong> Selecting authentic materials that patinate beautifully over decades.</li>
+        </ul>
+      </section>
+
+      <section class="drawer-section">
+        <h3 class="drawer-title">GLOBAL STUDIOS</h3>
+        <div class="studio-address">
+          <strong>Oslo</strong>
+          <p>Dronningens gate 14, 0152 Oslo, Norway</p>
+        </div>
+        <div class="studio-address">
+          <strong>London</strong>
+          <p>42 Berkeley Square, Mayfair, London W1J 5AW</p>
+        </div>
+        <div class="studio-address">
+          <strong>Zurich</strong>
+          <p>Rämistrasse 101, 8092 Zürich, Switzerland</p>
+        </div>
+      </section>
+
+      <section class="drawer-section">
+        <h3 class="drawer-title">PRESS & INQUIRIES</h3>
+        <p class="drawer-text">For commissions, lectures, and press requests:</p>
+        <a href="mailto:contact@dwel-studio.com" class="drawer-email">contact@dwel-studio.com</a>
+      </section>
+    </div>
+  </aside>
+
+  <!-- Interactive Style Guide Modal (matching the Figma Cover Tokens) -->
+  <div class="modal-overlay" id="styleguide-modal" aria-hidden="true">
+    <div class="modal-card styleguide-card">
+      <button class="modal-close-btn" id="styleguide-close-btn">&times;</button>
+      <div class="styleguide-inner">
+        <div class="styleguide-header">
+          <span class="badge">FIGMA DESIGN TOKENS</span>
+          <h2>DWEL Brand & Style System</h2>
+        </div>
+        
+        <div class="styleguide-grid">
+          <div class="sg-column">
+            <h3>Typography</h3>
+            <div class="font-preview-box">
+              <span class="font-huge">Aa</span>
+              <h4>Poppins</h4>
+              <p class="font-samples">Regular (400), Medium (500), SemiBold (600)</p>
+              <p class="font-alphabet">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
+            </div>
+          </div>
+
+          <div class="sg-column">
+            <h3>Color Palette</h3>
+            
+            <div class="color-item">
+              <div class="color-swatch" style="background-color: #DE943D;"></div>
+              <div class="color-info">
+                <strong>Primary Accent</strong>
+                <code>#DE943D</code>
+              </div>
+            </div>
+
+            <div class="color-item">
+              <div class="color-swatch" style="background-color: #111111;"></div>
+              <div class="color-info">
+                <strong>Primary Dark</strong>
+                <code>#111111</code>
+              </div>
+            </div>
+
+            <div class="color-item">
+              <div class="color-swatch" style="background-color: #888888;"></div>
+              <div class="color-info">
+                <strong>Secondary Mid</strong>
+                <code>#888888</code>
+              </div>
+            </div>
+
+            <div class="color-item">
+              <div class="color-swatch" style="background-color: #AAAAAA;"></div>
+              <div class="color-info">
+                <strong>Secondary Light</strong>
+                <code>#AAAAAA</code>
+              </div>
+            </div>
+
+            <div class="color-item">
+              <div class="color-swatch" style="background-color: #F9F9F9; border: 1px solid #ddd;"></div>
+              <div class="color-info">
+                <strong>Background Canvas</strong>
+                <code>#F9F9F9</code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+node_modules/
+*.log
+scratch/
+figma_*.png
+slice_*.png
+part_*.png
+colors_section.png
+header_check.png
+play_button.png
+script_*.json
